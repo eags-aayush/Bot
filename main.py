@@ -1,4 +1,5 @@
 import discord
+import webserver
 from discord.ext import commands
 from events.on_member_join import on_member_join as member_join_event
 from events.on_member_leave import on_member_leave as member_leave_event
@@ -66,4 +67,5 @@ bot.add_command(remove_autoresponder)
 init_db()
 
 # Run the bot
+webserver.keep_alive()
 bot.run("MTMwMzk0MjYwODUwNjMyNzA5MQ.G_1uHO.Kus4NojJmVXw_BAraGPlOZg2rTijxnMOAGT2Bo")
