@@ -2,7 +2,7 @@ from flask import Flask
 from threading import Thread
 
 app = Flask('')
-@approute('/')
+@app.route('/')
 def home():
   return "Discord Bot"
 def run():
